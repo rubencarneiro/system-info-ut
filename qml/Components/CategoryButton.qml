@@ -42,9 +42,9 @@ AbstractButton {
 
     property alias icon: icon
 
-    UbuntuShape {
+    LomiriShape {
         id: shape
-        aspect: rootItem.pressed ? UbuntuShape.Inset : UbuntuShape.DropShadow
+        aspect: rootItem.pressed ? LomiriShape.Inset : LomiriShape.DropShadow
         color: rootItem.color
         radius: "medium"
 
