@@ -1,7 +1,7 @@
 
 import QtQuick 2.12
 import QtQuick.Layouts 1.1
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 
 UbuntuShape {
     property var defaultTime: 3500
@@ -16,7 +16,7 @@ UbuntuShape {
     width: label.width + units.gu(2)
     height: label.height + units.gu(2)
 
-    backgroundColor: (Theme.name != "Ubuntu.Components.Themes.Ambiance") ? "white" : "#202020"
+    backgroundColor: (Theme.name != "Lomiri.Components.Themes.Ambiance") ? "white" : "#202020"
 
     aspect: UbuntuShape.DropShadow
     radius: "large"
@@ -77,7 +77,7 @@ UbuntuShape {
         //elide: Text.ElideMiddle
         anchors.centerIn: parent
         text: ""
-        color: (Theme.name == "Ubuntu.Components.Themes.Ambiance") ? "white" : "#202020"
+        color: (Theme.name == "Lomiri.Components.Themes.Ambiance") ? "white" : "#202020"
         wrapMode: Text.Wrap
         onLinkActivated: Qt.openUrlExternally(link)
     }
